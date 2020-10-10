@@ -14,7 +14,7 @@
 </div>
 
 
-<form action="{{ url('store') }}" menthod="POST" enctype="multipart/form-data">
+<form action="{{ url('store') }}" method="POST" enctype="multipart/form-data">
 	@csrf
 
 	<div class="col-xs-6 col-sm-6 col-md-6">
