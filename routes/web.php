@@ -19,8 +19,8 @@ Route::get('/', function () {
     return view('main');
 });
 
-Route::get('transactions', [TransactionsController::class,'index' ]);
-Route::post('create', [TransactionsController::class,'create' ]);
+Route::get('transactions', [TransactionsController::class,'index' ])->name('transactions');
+Route::get('create', [TransactionsController::class,'create' ]);
 Route::post('store', [TransactionsController::class,'store' ]);
 
 

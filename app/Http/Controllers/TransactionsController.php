@@ -32,7 +32,7 @@ class TransactionsController  extends Controller
 
 		$transaction = DB::table('transactions')->insert($data);
 
-		return redirect()-> route('index') 
+		return redirect()-> route('transactions') 
 			->with('success','Transaction Created Successfully');
 	}
 

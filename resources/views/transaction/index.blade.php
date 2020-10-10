@@ -19,6 +19,7 @@
 		<div class="alert alert-success">
 			<p>{{ $message }}</p>
 		</div>
+		('alert.alert').delay(3000).slideUp(300);
 		@endif
 
 
