@@ -28,9 +28,8 @@ Route::post('update/transaction/{transaction_id}', [TransactionsController::clas
 Route::get('delete/transaction/{transaction_id}', [TransactionsController::class,'delete' ])->name('delete');
 Route::get('details/transaction/{transaction_id}', [TransactionsController::class,'details' ])->name('details');
 
-
-//Route::get('allPrices/transaction','ClientController@getAllPrices')->name('getAllPrices');
 Route::get('getAllPrices', [ClientController::class,'getAllPrices' ])->name('getAllPrices');
+Route::get('Past52WeekHiLow', [ClientController::class,'Past52WeekHiLow' ])->name('Past52WeekHiLow');
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

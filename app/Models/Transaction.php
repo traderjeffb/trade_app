@@ -17,4 +17,6 @@ class Transaction extends Model
         'closed_trade_proift_loss',
     ];
 
+
+
 }

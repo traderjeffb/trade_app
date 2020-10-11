@@ -14,7 +14,14 @@
 			<a class="btn btn-success" href="{{ url('create') }}">New Trade<a/>
 		</div>
 	</div>
-
+	<form>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<div class="form-group">
+					<strong>Please Enter Your Opening Balance Before Trading</strong>
+					<input type="text" name="account_opening_balanace" class="form-control" placeholder="Opening Balance">
+				</div>
+			</div>
+		</form>
 
 		@if($message = Session::get('success'))
 		<div class="alert alert-success">
