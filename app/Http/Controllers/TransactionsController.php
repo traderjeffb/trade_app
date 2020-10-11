@@ -72,6 +72,9 @@ class TransactionsController  extends Controller
 		return view('Transaction.details',compact('data'));
 		}
 
+
+		
+
 }	
 
 

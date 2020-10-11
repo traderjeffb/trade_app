@@ -9,6 +9,7 @@
 		<div class="row" >
 			<h1>This will be the landing page--will add navagation and css<h1/>
 			<a class="btn btn-info" href="{{ url('transactions') }}">See Index of Transactions</a>
+			<a class="btn btn-info" href="{{ url('getAllPrices') }}">Get All Prices</a>
 		</div>
 	</div>
 </body>

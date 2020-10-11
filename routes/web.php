@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TransactionsController;
+use App\Http\Controllers\ClientController;
 use resources\routes\web;
 
 /*
@@ -27,8 +28,9 @@ Route::post('update/transaction/{transaction_id}', [TransactionsController::clas
 Route::get('delete/transaction/{transaction_id}', [TransactionsController::class,'delete' ])->name('delete');
 Route::get('details/transaction/{transaction_id}', [TransactionsController::class,'details' ])->name('details');
 
-//Route::get('update/tranasaction/{transaction_id}','TransactionsController@Update')->name('update');
 
+//Route::get('allPrices/transaction','ClientController@getAllPrices')->name('getAllPrices');
+Route::get('getAllPrices', [ClientController::class,'getAllPrices' ])->name('getAllPrices');
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
